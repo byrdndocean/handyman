@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    
+    <!-- favicon created on https://favicon.io/ -->
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main-style.css" />
+    <title>Handyman Services</title>
+  </head>
+  <body>
+    <main class="container hidden">
+      <header class="header overall-layout padd sec-flex">
+        <nav class="header__nav">
+          <!-- <a href="#" class="header__nav--logo">
+            <img src="images/header/logo.svg" alt="Logo" />
+          </a> -->
+
+          <div class="header__nav--hamburger">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+          </div>
+
+          <ul class="header__nav--links">
+            <a 
+              href="#home" 
+              class="header__nav--links__link"
+              >Home</a
+              >
+            <a
+              href="#about"
+              class="header__nav--links__link"
+              >About</a
+            >
+            <a
+              href="#services"
+              class="header__nav--links__link"
+              >Services</a
+            >
+            <!-- <a
+              href="pricing.html"
+              class="header__nav--links__link"
+              target="_blank"
+              >Pricing</a
+            > -->
+            <!-- <a
+              href="schedule.html"
+              class="header__nav--links__link"
+              target="_blank"
+              >Schedule</a
+            > -->
+            <a
+              href="#team"
+              class="header__nav--links__link"
+              >Team</a
+            >
+            <!-- <a href="blog.html" class="header__nav--links__link" target="_blank"
+              >Blog</a
+            > -->
+            <a
+              href="#gallery"
+              class="header__nav--links__link"
+              >Gallery</a
+            >
+            <a
+              href="#reviews"
+              class="header__nav--links__link"
+              >Reviews</a
+            >
+            <a
+              href="#footer"
+              class="header__nav--links__link"
+              >Contact</a
+            >
+          </ul>
+
+          <!-- <a href="pricing.html" class="header__nav--cta sec-link">
+            Services <i class="fa-solid fa-ticket"></i>
+          </a> -->
+        </nav>
+
+        <section class="header__hero hidden hidden" id="home">
+          <p class="header__hero--location">
+            <i class="fa-solid fa-location-dot"></i>
+            Upstate South Carolina
+          </p>
+
+          <h1 class="header__hero--title">
+            Handyman and Lawn <span>Services</span>
+          </h1>
+
+          <p class="header__hero--para sec-para">
+            We provide lawn care as well as home repairs throughout Upstate South Carolina
+            <span>Locally owned business you can trust</span>
+          </p>
+
+          <a href="#services" class="header__hero--tickets-link sec-link">
+            Services
+          </a>
+        </section>
+      </header>
+
+
+      <section class="about overall-layout padd hidden" id="about">
+        <figure class="about__img">
+          <img loading="lazy" src="images/about/about-image.jpg" alt="Event" />
+        </figure>
+
+        <div class="about__content">
+          <h6 class="about__content--mini-title sec-mini-title">
+            More About Us
+          </h6>
+          <h2 class="about__content--title sec-title">Business Name</h2>
+          <p class="about__content--para sec-para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus,
+            dolor sit amet, consectetur adipisicing elit. Delectus, modi!
+            <span
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. dolor
+              sit amet, consectetur adipisicing elit. Delectus,</span
+            >
+          </p>
+
+          <p class="about__content--date sec-para">
+            <span>Est 2022</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="features overall-layout padd sec-flex hidden" id="services">
+        
+        <h2 class="features__title sec-title">Why you should choose Business Name?</h2>
+        <p class="features__para sec-para">
+          We provide quality work for an affordable price.
+          <span>Contact us for a free estimate.</span>
+        </p>
+
+        <div class="features__container responsive-grid">
+          <div class="features__container--feature hidden">
+            
+            <i class="fa-solid fa-tree features__container--feature__icon"></i>
+            
+            <h3 class="features__container--feature__number">LS</h3>
+            <h4 class="features__container--feature__title">Landscaping</h4>
+            <p class="features__container--feature__desc sec-sub-para">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consequuntur aut animi amet.
+            </p>
+          </div>
+
+          <div class="features__container--feature hidden">
+            <i
+              class="fa-solid fa-user-group features__container--feature__icon"
+            ></i>
+
+            <h3 class="features__container--feature__number">LM</h3>
+
+            <h4 class="features__container--feature__title">Lawn Maintenance</h4>
+
+            <p class="features__container--feature__desc sec-sub-para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum
+              ipsum at facilis quaerat sunt!
+            </p>
+          </div>
+
+          <div class="features__container--feature hidden">
+            <i
+              class="fa-solid fa-calendar-check features__container--feature__icon"
+            ></i>
+
+            <h3 class="features__container--feature__number">AS</h3>
+
+            <h4 class="features__container--feature__title">Assembly Services</h4>
+
+            <p class="features__container--feature__desc sec-sub-para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum
+              ipsum at facilis quaerat sunt!
+            </p>
+          </div>
+
+          <div class="features__container--feature hidden">
+            
+            <i class="fa-solid fa-sheet-plastic features__container--feature__icon"></i>
+
+            <h3 class="features__container--feature__number">DW</h3>
+
+            <h4 class="features__container--feature__title">Drywall</h4>
+
+            <p class="features__container--feature__desc sec-sub-para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum
+              ipsum at facilis quaerat sunt!
+            </p>
+          </div>
+
+          <div class="features__container--feature hidden">
+            <i
+              class="fa-solid fa-people-group features__container--feature__icon"
+            ></i>
+
+            <h3 class="features__container--feature__number">Car</h3>
+
+            <h4 class="features__container--feature__title">
+              Carpentry
+            </h4>
+
+            <p class="features__container--feature__desc sec-sub-para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum
+              ipsum at facilis quaerat sunt!
+            </p>
+          </div>
+
+          <div class="features__container--feature hidden">
+
+            <i class="fa-solid fa-paint-roller features__container--feature__icon"></i>
+
+            <h3 class="features__container--feature__number">Pa</h3>
+
+            <h4 class="features__container--feature__title">Painting</h4>
+
+            <p class="features__container--feature__desc sec-sub-para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum
+              ipsum at facilis quaerat sunt!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery overall-layout padd sec-flex hidden" id="gallery">
+      <h6 class="gallery__mini-title sec-mini-title">Gallery</h6>
+      <h2 class="gallery__title sec-title">Business Name Gallery</h2>
+      <p class="gallery__desc sec-para">
+        Providing Excellent Results Across the Upstate
+        <span>Check out some of our work.</span>
+      </p>
+
+
+      <div class="gallery__container responsive-grid">
+        <figure class="gallery__container--img hidden">
+          <img
+            src="images/gallery-page/work-1.jpg"
+            alt="Events Gallery Image"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="gallery__container--img">
+          <img
+            src="images/gallery-page/work-2.jpg"
+            alt="Events Gallery Image"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="gallery__container--img">
+          <img
+            src="images/gallery-page/work-3.jpg"
+            alt="Events Gallery Image"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="gallery__container--img">
+          <img
+            src="images/gallery-page/work-4.jpg"
+            alt="Events Gallery Image"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="gallery__container--img">
+          <img
+            src="images/gallery-page/work-5.jpg"
+            alt="Events Gallery Image"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="gallery__container--img">
+          <img
+            src="images/gallery-page/work-6.jpg"
+            alt="Events Gallery Image"
+            loading="lazy"
+          />
+        </figure>
+      </div>
+    </section>
+
+      <section class="speakers overall-layout padd sec-flex hidden" id="team">
+        <h6 class="speakers__mini-title sec-mini-title">Team</h6>
+        <h2 class="speakers__title sec-title">Meet Our Crew</h2>
+        <p class="speakers__desc sec-para">
+          Our crew is made up of hard working people with a passion for providing quality service in the lawn care and repair business.
+          <span>We take pride in serving our community.</span>
+        </p>
+
+        <div class="speakers__container responsive-grid">
+          <div class="speakers__container--speaker hidden">
+            <figure class="speakers__container--speaker__img">
+              <img
+                loading="lazy"
+                src="images/speakers/crew-1.jpg"
+                alt="Crew Member"
+              />
+            </figure>
+
+            <h3 class="speakers__container--speaker__name sec-sub-title">
+              John Doe
+            </h3>
+            <p class="speakers__container--speaker__role sec-sub-para">
+              Co-Founder, CEO
+            </p>
+
+            <div class="speakers__container--speaker__social">
+              <a href="#" target="_blank" class="fa-brands fa-facebook-f"></a>
+              <a href="#" target="_blank" class="fa-brands fa-twitter"></i></a>
+              <a href="#" target="_blank" class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" target="_blank" class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="speakers__container--speaker hidden">
+            <figure class="speakers__container--speaker__img">
+              <img
+                loading="lazy"
+                src="images/speakers/crew-2.jpg"
+                alt="Crew Member"
+              />
+            </figure>
+
+            <h3 class="speakers__container--speaker__name sec-sub-title">
+              Sam Doe
+            </h3>
+            <p class="speakers__container--speaker__role sec-sub-para">
+              Co-Founder, CEO
+            </p>
+
+            <div class="speakers__container--speaker__social">
+              <a href="#" target="_blank" class="fa-brands fa-facebook-f"></a>
+              <a href="#" target="_blank" class="fa-brands fa-twitter"></i></a>
+              <a href="#" target="_blank" class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" target="_blank" class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+
+          
+        </div>
+      </section>
+
+      <!-- <section class="events overall-layout padd sec-flex">
+        
+      </section> -->
+
+      <!-- <section class="pricing overall-layout padd sec-flex">
+        <h6 class="pricing__mini-title sec-mini-title">Pricing</h6>
+        <h2 class="pricing__title sec-title">Pricing & Plans</h2>
+        <p class="pricing__desc sec-para">
+          Lorem ipsum dolor, sit amet consectetur adipisicing. sit amet
+          consectetur adipisicing
+          <span>Lorem ipsum dolor sit amet.</span>
+        </p>
+
+        <div class="pricing__container responsive-grid">
+          <div class="pricing__container--plan">
+            <h5 class="pricing__container--plan__type">Regular</h5>
+            <p class="pricing__container--plan__ticket sec-sub-para">
+              Available tickets for this plan
+            </p>
+            <h4 class="pricing__container--plan__price">$10</h4>
+            <a href="#" class="pricing__container--plan__get-ticket sec-link"
+              >Get Ticket</a
+            >
+
+            <ul class="pricing__container--plan__features">
+              <li>One Day Conference Ticket</li>
+              <li>Posters Session</li>
+              <li>Coffee-break & Networking</li>
+              <li>Lunch & Networing</li>
+              <li>Keynote talk</li>
+            </ul>
+          </div>
+
+          <div class="pricing__container--plan">
+            <h5 class="pricing__container--plan__type">Exclusive</h5>
+            <p class="pricing__container--plan__ticket sec-sub-para">
+              Available tickets for this plan
+            </p>
+            <h4 class="pricing__container--plan__price">$99</h4>
+            <a href="#" class="pricing__container--plan__get-ticket sec-link"
+              >Get Ticket</a
+            >
+
+            <ul class="pricing__container--plan__features">
+              <li>Three-day Conference Ticket</li>
+              <li>Posters Session</li>
+              <li>Coffee-break & Networking</li>
+              <li>Lunch & Networing</li>
+              <li>Keynote talk</li>
+            </ul>
+          </div>
+
+          <div class="pricing__container--plan">
+            <h5 class="pricing__container--plan__type">Premium</h5>
+            <p class="pricing__container--plan__ticket sec-sub-para">
+              Available tickets for this plan
+            </p>
+            <h4 class="pricing__container--plan__price">$289</h4>
+            <a href="#" class="pricing__container--plan__get-ticket sec-link"
+              >Get Ticket</a
+            >
+
+            <ul class="pricing__container--plan__features">
+              <li>Five-day Conference Ticket</li>
+              <li>Posters Session</li>
+              <li>Coffee-break & Networking</li>
+              <li>Lunch & Networing</li>
+              <li>Keynote talk</li>
+            </ul>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="testimonials overall-layout padd sec-flex hidden" id="reviews">
+        <h6 class="testimonials__mini-title sec-mini-title">Testimonials</h6>
+        <h2 class="testimonials__title sec-title">What People Say About Us</h2>
+        <p class="testimonials__desc sec-para">
+          Still unsure, check out reviews from some of our satisfied clients
+          <span>We are happy to provide quality customer care.</span>
+        </p>
+
+        <div class="testimonials__container responsive-grid">
+          <div class="testimonials__container--testimonial">
+            <div class="testimonials__container--testimonial__personal-info">
+              <figure
+                class="testimonials__container--testimonial__personal-info--img"
+              >
+                <img
+                  loading="lazy"
+                  src="images/testimonials/google2.png"
+                  alt="Testimonial"
+                />
+              </figure>
+
+              <div>
+                <h3 class="sec-sub-title">Richard Austin</h3>
+                <p class="sec-sub-para">Greenville SC</p>
+
+                <p>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+            </div>
+
+            <p class="testimonials__container--testimonial__desc sec-para">
+              Our lawn is in the best condition since we've moved to the Upstate.  Very professional and courteous.
+            </p>
+          </div>
+
+          <div class="testimonials__container--testimonial">
+            <div class="testimonials__container--testimonial__personal-info">
+              <figure
+                class="testimonials__container--testimonial__personal-info--img"
+              >
+                <img
+                  loading="lazy"
+                  src="images/testimonials/google2.png"
+                  alt="Testimonial"
+                />
+              </figure>
+
+              <div>
+                <h3 class="sec-sub-title">Mary Brownell</h3>
+                <p class="sec-sub-para">Cowpens SC</p>
+
+                <p>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+            </div>
+
+            <p class="testimonials__container--testimonial__desc sec-para">
+              Very professional and they did a great job.  Will hire again.
+            </p>
+          </div>
+
+          <div class="testimonials__container--testimonial">
+            <div class="testimonials__container--testimonial__personal-info">
+              <figure
+                class="testimonials__container--testimonial__personal-info--img"
+              >
+                <img
+                  loading="lazy"
+                  src="images/testimonials/google2.png"
+                  alt="Testimonial"
+                />
+              </figure>
+
+              <div>
+                <h3 class="sec-sub-title">Susan Hill</h3>
+                <p class="sec-sub-para">Easley SC</p>
+
+                <p>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star-half-stroke"></i>
+                </p>
+              </div>
+            </div>
+
+            <p class="testimonials__container--testimonial__desc sec-para">
+              Workers had a can do attitude and went above and beyond.  Timely and knowledgeable.
+            </p>
+          </div>
+
+          <div class="testimonials__container--testimonial">
+            <div class="testimonials__container--testimonial__personal-info">
+              <figure
+                class="testimonials__container--testimonial__personal-info--img"
+              >
+                <img
+                  loading="lazy"
+                  src="images/testimonials/google2.png"
+                  alt="Testimonial"
+                />
+              </figure>
+
+              <div>
+                <h3 class="sec-sub-title">Alan Davis</h3>
+                <p class="sec-sub-para">Spartanburg SC</p>
+
+                <p>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+            </div>
+
+            <p class="testimonials__container--testimonial__desc sec-para">
+              They arrived on time and worked for hours on end until the job was complete.  Excellent service!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="blogs overall-layout padd sec-flex">
+        
+      </section> -->
+
+      <section class="cta overall-layout padd sec-flex hidden">
+        
+        <h2 class="cta__title sec-title">
+           <span>Get Your Free Estimate</span>
+        </h2>
+
+        <p class="cta__desc sec-para">
+          Call and Receive a Free Estimate
+          <span>Typical response time is within 24 hours</span>
+          <span>1-(###)-###-####</span>
+        </p>
+
+      </section>
+
+      <footer class="footer overall-layout padd hidden" id="footer">
+        <div class="footer__info">
+          
+          <p class="footer__info--desc sec-sub-title">Business Name</p>
+
+          <p class="footer__info--desc sec-sub-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+            harum assumenda. Itaque exercitationem rerum non, beatae,
+            consequuntur ea officiis ipsa labore praesentium dolores eligendi
+            molestias consequatur numquam eveniet illum
+          </p>
+
+          <p class="footer__info--social sec-sub-para">Follow Us On:</p>
+
+          <div class="footer__info--social-container">
+            <a href="#" target="_blank" class="fa-brands fa-facebook-f"></a>
+            <a href="#" target="_blank" class="fa-brands fa-twitter"></i></a>
+            <a href="#" target="_blank" class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" target="_blank" class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer__quick-links">
+          <h3 class="footer__quick-links--title sec-sub-title">Quick Links</h3>
+
+          <ul class="footer__quick-links--container">
+            <li class="footer__quick-links--container__link">
+              <a href="#home">Home</a>
+            </li>
+            <li class="footer__quick-links--container__link">
+              <a href="#services">Services</a>
+            </li>
+            <li class="footer__quick-links--container__link">
+              <a href="#gallery">Gallery</a>
+            </li>
+            <li class="footer__quick-links--container__link">
+              <a href="#team">Team</a>
+            </li>
+            <li class="footer__quick-links--container__link">
+              <a href="#reviews">Reviews</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- <div class="footer__explore-more">
+          <h3 class="footer__explore-more--title sec-sub-title">
+            Explore More
+          </h3>
+
+          <ul class="footer__explore-more--container">
+            <li class="footer__explore-more--container__link">
+              <a href="#">About Us</a>
+            </li>
+            <li class="footer__explore-more--container__link">
+              <a href="#">Our Pricing</a>
+            </li>
+            <li class="footer__explore-more--container__link">
+              <a href="#">FAQs</a>
+            </li>
+            <li class="footer__explore-more--container__link">
+              <a href="#">Guides</a>
+            </li>
+            <li class="footer__explore-more--container__link">
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div> -->
+
+        <!-- <div class="footer__newsletter">
+          <h3 class="footer__newsletter--title sec-sub-title">
+            Subscribe to our Newsletter
+          </h3>
+
+          <form class="footer__newsletter--form">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email Address" />
+            <input class="sec-link" type="submit" value="Subscribe" />
+          </form> -->
+        </div>
+      </footer>
+    </main>
+
+    <script defer src="js/app.js"></script>
+  </body>
+</html>
