@@ -1,0 +1,114 @@
+@use "../general-styles/colors" as clrs;
+@use "../general-styles/padding" as pad;
+@use "../general-styles/typography" as type;
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5rem 3rem;
+
+  &__info,
+  &__newsletter {
+    flex-basis: 65%;
+  }
+
+  &__quick-links,
+  &__explore-more {
+    flex-basis: 15%;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    &--container {
+      // flex-shrink: 0;
+
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+
+      &__link {
+        a {
+          font-size: type.font-size-st(sc);
+          color: clrs.color-link("4");
+
+          &:hover {
+            color: clrs.color-link("2");
+          }
+        }
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    &--desc,
+    &--social {
+      font-weight: type.font-weight(regular);
+    }
+
+    &--social-container {
+      display: grid;
+      grid-template-columns: repeat(4, 5rem);
+      column-gap: 1.5rem;
+
+      a {
+        padding: pad.padding-st-v(s) pad.padding-st-h(xs);
+        background-color: clrs.color-type("3");
+        color: clrs.color-type("1");
+        text-align: center;
+        font-size: type.font-size-st(sc);
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: all 0.25s ease-in;
+      }
+        
+          a:hover:first-child {
+          background-color: clrs.color-social(facebook);
+        }
+        a:hover:nth-child(2) {
+          background-color: clrs.color-social(twitter);
+        }
+        a:hover:nth-child(3) {
+          background-color: clrs.color-social(linkedin);
+        }
+        a:hover:last-child {
+          background-color: clrs.color-social(instagram);
+        }
+        
+      
+    }
+  }
+
+  &__newsletter {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    &--form {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+
+      input[type="text"],
+      input[type="email"] {
+        padding: pad.padding-st-v(m) pad.padding-st-h(s);
+        border: 1px solid rgba(clrs.color-type("2"), 0.3);
+        font-size: type.font-size-st(sc);
+      }
+
+      input[type="submit"] {
+        background-color: clrs.color-link("2");
+        cursor: pointer;
+
+        &:hover {
+          background-color: clrs.color-link("3");
+        }
+      }
+    }
+  }
+}
